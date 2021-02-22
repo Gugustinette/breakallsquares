@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Break All Squares</title>
+        <link rel="stylesheet" type = "text/css" href = "content/CSS/style_navbar.css">
+        <link rel="stylesheet" type = "text/css" href = "content/CSS/style_seemore.css">
+        <link rel="icon" href="content/Assets/Ico/breakallsquares.ico">
+    </head>
+    <script src="/socket.io/socket.io.js"></script>
+    <body>
+        <ul class = "ul1" id = "ul1_seemore">
+            <li><a href="index.html" id="button_seemore">Go to game</a></li>
+        </ul>
+        <div id="seemore_content">
+            <div id="seemore_square">
+                <h1>Number of squares left :</h1>
+                <p id="nb_square_display">1999888777</p>
+            </div>
+            <div id="content_div">
+                <div></div>
+                <div class="seemore_text">
+                    <h1>What's "Break All Squares" ?</h1>
+                    <h5>
+                        Break All Squares is an earth-sized game based on a giant 31650x31650 squared matrice, divided in 633x633 squared matrices (chunk) of 50x50.
+                        It represents 1 001 722 500 squares in total.
+                        <br>
+                        The goal is basically to destroy all the squares by clicking on them.
+                        <br>
+                        You can navigate through chunk with X and Y coordinates between 0 and 632.
+                        <br>
+                        Good luck humans.
+                    </h5>
+                    <h3>Here are the tools used to create the website :</h3>
+                    <h4>Front :</h4>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>JavaScript</li>
+                        <li>PixiJS</li>
+                    </ul>
+                    <h4>Back :</h4>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>WebSocket.io</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <h4>The website is hosted by OVH.</h4>
+                </div>
+                <div class="seemore_text">
+                    <h3>Author :</h3>
+                    <h5>Augustin MERCIER "Gugustinette"</h5>
+                    <h5><a href="https://twitter.com/gugustinette">Twitter</a> / <a href="https://github.com/Gugustinette">GitHub</a></h5>
+                </div>
+                <div class="seemore_text">
+                    <h3>Special thanks :</h3>
+                    <h5>Genroa</h5>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.7/pixi.min.js"></script>
+    <script src="content/JS/script_seemore.js"></script>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "break",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Augustin MERCIER Gugustinette",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql-async-simple": "^1.0.3",
+    "nodejs-websocket": "^1.7.2",
+    "socket.io": "^3.1.0",
+    "ws": "^7.4.2"
+  }
+}

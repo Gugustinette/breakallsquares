@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Break All Squares</title>
+        <link rel="stylesheet" type = "text/css" href = "content/CSS/style_index.css">
+        <link rel="stylesheet" type = "text/css" href = "content/CSS/style_navbar.css">
+        <link rel="icon" href="content/Assets/Ico/breakallsquares.ico">
+    </head>
+    <script src="/socket.io/socket.io.js"></script>
+    <body>
+        <ul class = "ul2" id = "ul2">
+            <li><p id = "nb_square_navbar">Square Value</p></li>
+            <li><p id = "display_chunk_navbar">Chunk Value</p></li>
+        </ul>
+        <ul class = "ul1" id = "ul1">
+            <li><a href = "see_more.html" id="SeeMoreButton">See More</a></li>
+            <li><a onclick="OnRandomChunk()" id="RandomChunkButton">Random Chunk</a></li>
+            <li>
+                <a onclick="OnChunkClick()" id="SearchChunkButton">Search Chunk</a>
+                <form action="" id="search_chunk_form" class="chunk_form">
+                    <div id="form_div">
+                        <label for="form_input_text_x" class="form_input_label">X :</label>
+                        <input type="text" name="grid_x" id="form_input_text_x" class="form_input_text" pattern="\d*">
+                        <label for="form_input_text_y" class="form_input_label">Y :</label>
+                        <input type="text" name="grid_y" id="form_input_text_y" class="form_input_text" pattern="\d*">
+                    </div>
+                    <input type="button" value="Send" id = "form_input_button">
+                </form>
+            </li>
+        </ul>
+        <div id = "main_canvas"></div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.7/pixi.min.js"></script>
+    <script src="content/JS/script_index.js"></script>
+    <script src="content/JS/script_navbar.js"></script>
+</html>
